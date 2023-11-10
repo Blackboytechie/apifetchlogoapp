@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Signup Signin Home Example</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Logo</h2>
+      <nav class="navigation">
+        <a href="#" id="homelink">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+        <button class="SignUpbtn-popup" id="SignUpBtn">SignUp</button>
+        <button class="loginbtn-popup" id="loginBtn">Sign In</button>
+        <button class="logoutbtn-popup" id="logoutBtn">Log Out</button>
+      </nav>
+    </header>
+    <div class="container">
+      <div id="signup" class="form-container">
+        <h2>Sign Up</h2>
+        <!-- Signup form -->
+        <form id="signupForm">
+          <input id="s-username" type="text" placeholder="Username" required />
+          <input
+            id="s-password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <div class="termscondition">
+            <input type="checkbox" />
+            <label>I agree to the terms & conditions</label>
+          </div>
+          <button type="submit">Sign Up</button>
+          <div class="register-Login">
+            <p>
+              Already have an account?<a
+                href="#"
+                id="login-link"
+                class="login-link"
+                >Login</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div id="signin" class="form-container">
+        <h2>Sign In</h2>
+        <!-- Signin form -->
+        <form id="signinForm">
+          <input id="l-username" type="text" placeholder="Username" required />
+          <input
+            id="l-password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember Me</label>
+            <a href="#">Forgot Password ?</a>
+          </div>
+          <button type="submit">Sign In</button>
+          <div class="Login-register">
+            <p>
+              Don't have an account?<a
+                href="#"
+                id="register-link"
+                class="register-link"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <!-- homepage view -->
+      <div id="home" class="content">
+        <h2>Welcome to the Home Page</h2>
+        <div id="userGallery" class="gallery-container"></div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="footer-wrapper" id="footerwrapper">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Reservation</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>
+            <img
+              src="./images/geo-alt-fill.svg"
+              alt=""
+              style="height: 20px; width: 20px"
+            />123 street,New york,USA
+          </p>
+          <p>
+            <img
+              src="./images/telephone-fill.svg"
+              alt=""
+              style="height: 20px; width: 20px"
+            />+91 9487952607
+          </p>
+          <p>
+            <img
+              src="./images/envelope-fill.svg"
+              alt=""
+              style="height: 20px; width: 20px"
+            />mail@domain.com
+          </p>
+        </div>
+        <div>
+          <h4>Opening</h4>
+          <p>Monday-Sunday</p>
+          <p>9AM-10PM</p>
+          <p>Sundat</p>
+          <p>10Am-8PM</p>
+        </div>
+        <p>© 2023 Logo.com</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
